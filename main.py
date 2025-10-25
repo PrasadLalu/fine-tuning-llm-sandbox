@@ -27,7 +27,7 @@ app.add_middleware(
 )
 
 # API routes
-app.include_router(api_routes, prefix="/v1")
+app.include_router(api_routes, prefix="/v1/api")
 
 # Preload models on startup (optional - comment out if not needed)
 @app.on_event("startup")
